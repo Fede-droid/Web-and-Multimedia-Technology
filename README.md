@@ -1,4 +1,4 @@
-# Web-and-Multimedia-Technology Project
+# Cignoli Automotive Group Website
 
 ## Project Description
 
@@ -66,3 +66,9 @@ This is the most important page of the website because here, the administrator c
 
 ### Logout
 Finally, clicking on the logout option does not lead to a separate page. Instead, it redirects the user back to the login page.
+
+## Conclusions
+
+This website for the Cignoli Automotive Group was developed to provide administrators with a comprehensive and efficient tool to manage their operations. By integrating both client-side and server-side technologies, the site ensures a seamless experience for users. 
+
+For those interested in a more detailed overview of the project, including technical specifics and development insights, please refer to the report available in this repository.
