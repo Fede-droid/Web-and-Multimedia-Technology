@@ -1,0 +1,531 @@
+/* Stili Base */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    /* Font di base per coerenza */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    /* Colore di sfondo leggero per il corpo della pagina */
+    color: #333;
+    /* Colore di base del testo */
+}
+
+a {
+    color: #007bff;
+    /* Colore di base per i link */
+    text-decoration: none;
+    /* Rimuove il sottolineato dai link */
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Aggiunge un sottolineato al passaggio del mouse per migliorare l'usabilità */
+}
+
+/* Header */
+header {
+    background-color: #333;
+    /* Colore di sfondo per l'header */
+    color: #fff;
+    /* Colore del testo per l'header */
+    /*padding: 20px 0; /* Spaziatura interna per l'header */
+    text-align: center;
+    /* Centra il testo dell'header */
+}
+
+section {
+    flex: 1 0 auto;
+}
+
+/* Stili per il contenuto principale */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra gli elementi flex verticalmente */
+    margin: 20px;
+    /* Margini esterni per separare il contenuto */
+}
+
+h2,
+h3 {
+    color: #007bff;
+    /* Colore per titoli e sottotitoli */
+}
+
+h2 {
+    margin-bottom: 0.5em;
+    /* Spaziatura sotto i titoli principali */
+}
+
+h3 {
+    margin: 1em 0 0.5em;
+    /* Spaziatura per i sottotitoli */
+}
+
+p {
+    text-align: justify;
+    /* Giustifica il testo dei paragrafi */
+    max-width: 800px;
+    /* Larghezza massima per i paragrafi per migliorare la leggibilità */
+    margin: 0 auto 1em;
+    /* Centra i paragrafi con margini automatici e aggiunge spazio sotto */
+}
+
+img {
+    max-width: 100%;
+    /* Rende le immagini responsive */
+    height: auto;
+    /* Mantiene le proporzioni delle immagini */
+    margin: 20px 0;
+    /* Spaziatura sopra e sotto le immagini */
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    /* Colore di sfondo per il footer */
+    color: #fff;
+    /* Colore del testo per il footer */
+    text-align: center;
+    /* Centra il testo nel footer */
+    padding: 20px 0;
+    /* Spaziatura interna per il footer */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    /* Centra il contenuto del footer */
+    padding: 0 20px;
+    /* Spaziatura interna per il contenuto del footer */
+}
+
+.footer-links {
+    list-style: none;
+    /* Rimuove gli stili di lista */
+    padding: 0;
+    /* Rimuove la spaziatura interna della lista */
+    margin: 10px 0;
+    /* Spaziatura sopra e sotto la lista */
+}
+
+.footer-links li {
+    display: inline;
+    /* Mostra gli elementi della lista in linea */
+    margin: 0 10px;
+    /* Spaziatura tra gli elementi della lista */
+}
+
+.button {
+    background-color: #007bff;
+    /* Colore di sfondo per i pulsanti */
+    color: #fff;
+    /* Colore del testo per i pulsanti */
+    padding: 5px 15px;
+    /* Spaziatura interna per i pulsanti */
+    border-radius: 5px;
+    /* Arrotonda gli angoli dei pulsanti */
+    display: inline-block;
+    /* Permette la spaziatura dei pulsanti */
+    margin-top: 10px;
+    /* Spaziatura sopra i pulsanti */
+}
+
+.button:hover {
+    background-color: #0056b3;
+    /* Colore di sfondo al passaggio del mouse */
+}
+
+
+
+
+
+
+
+
+/* Stile generale della Navbar */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu>li {
+    float: left;
+}
+
+.nav-menu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Cambia il colore dei link al passaggio del mouse */
+.nav-menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Stile per i menu a discesa */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Modifica il colore del bottone dropdown al passaggio del mouse */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+
+
+
+
+
+/* Stile per il form di login */
+.login-form {
+    max-width: 500px;
+    /* Larghezza massima del form */
+    margin: auto;
+    /* Centra il form orizzontalmente */
+    padding: 20px;
+    /* Spaziatura interna */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    /* Spaziatura tra gli elementi del form */
+}
+
+.form-group label {
+    display: block;
+    /* I label occupano la propria riga */
+    margin-bottom: 5px;
+    /* Spazio tra il label e l'input */
+}
+
+.form-control {
+    width: 100%;
+    /* Larghezza completa per occupare lo spazio disponibile */
+    padding: 10px;
+    /* Spaziatura interna per l'input */
+    border: 1px solid #ccc;
+    /* Bordo sottile per l'input */
+    border-radius: 5px;
+    /* Angoli arrotondati per l'input */
+}
+
+.login-button {
+    max-width: 500%;
+    /* Larghezza completa per il bottone */
+    padding: 10px;
+    /* Spaziatura interna per il bottone */
+    background-color: #007bff;
+    /* Colore di sfondo per il bottone */
+    color: white;
+    /* Colore del testo per il bottone */
+    border: none;
+    /* Nessun bordo per il bottone */
+    border-radius: 5px;
+    /* Angoli arrotondati per il bottone */
+    cursor: pointer;
+    /* Cambia il cursore in pointer */
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+    /* Colore di sfondo al passaggio del mouse */
+}
+
+.flex-container {
+    display: flex;
+    /* Usa flexbox per centrare l'immagine */
+    justify-content: center;
+    /* Centra l'immagine orizzontalmente */
+    margin-top: 20px;
+    /* Spazio sopra l'immagine */
+}
+
+.login-image {
+    max-width: 500px;
+    /* Rende l'immagine responsive */
+    height: auto;
+    /* Mantiene le proporzioni dell'immagine */
+}
+
+.login-testo {
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+
+/* Stile per la tabella */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Stile per le celle della tabella */
+td,
+th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Stile per l'header della tabella */
+th {
+    background-color: #f2f2f2;
+}
+
+/* Stile per il titolo della tabella */
+.titolo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Stile per le immagini di modifica ed eliminazione */
+.iconcina {
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+/* Stile per il contenitore flessibile dell'immagine */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Stile per i link di modifica ed eliminazione */
+a {
+    text-decoration: none;
+    color: #007bff;
+    /* Colore dei link */
+}
+
+/* Stile per i link al passaggio del mouse */
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+/*body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}*/
+
+
+h2,
+h3,
+h1 {
+    text-align: center;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grafico,
+.testo {
+    margin-left: 20px;
+    width: calc(50% - 40px);
+    margin-right: 20px;
+}
+
+.grafico img {
+    width: 800px;
+    height: auto;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .grafico,
+    .testo {
+        width: 100%;
+        margin-right: 0;
+        /* Rimuove il margine destro su schermi più piccoli */
+    }
+}
+
+
+
+
+/* Stili per la tabella */
+.custom-table {
+    flex: 1 0 auto;
+    width: 100%;
+    max-width: 800px;
+    /* Imposta una larghezza massima per la tabella */
+    margin: 0 auto;
+    /* Centra la tabella orizzontalmente */
+    border-collapse: collapse;
+}
+
+.custom-table th,
+.custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.custom-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.custom-table td {
+    background-color: #fff;
+}
+
+.font {
+    font-family: Arial, sans-serif;
+}
+
+.titolo {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.spazio {
+    margin-bottom: 20px;
+}
+
+.space {
+    height: 150px;
+    /* Altezza dello spazio vuoto */
+    /*width: 400%; /* Larghezza piena */
+}
+
+/* Stile per l'immagine */
+.center-image {
+    display: block;
+    margin: 0 auto 20px auto;
+    /* Centra l'immagine orizzontalmente e aggiunge margine inferiore */
+    width: 600px;
+    /* Riduci la larghezza dell'immagine */
+}
+
+/* Stile per centrare il contenuto delle colonne */
+.centra {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Stili per la tabella dei pulsanti */
+.custom-table-buttons {
+    width: 100%;
+    margin-top: 20px;
+    /* Aggiungi un margine superiore per separare la tabella precedente */
+}
+
+.custom-table-buttons td {
+    padding: 8px;
+    text-align: center;
+}
+
+.custom-table-buttons input[type="text"],
+.custom-table-buttons select {
+    width: 100%;
+    /* Imposta la larghezza dei campi di input al 100% */
+    padding: 5px;
+    box-sizing: border-box;
+    /* Include il padding e il bordo nel calcolo della larghezza */
+    margin-bottom: 5px;
+    /* Aggiungi uno spazio tra i campi di input */
+}
+
+.custom-table-buttons .button3 {
+    padding: 5px 15px;
+    /* Imposta il padding per i pulsanti */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.custom-table-buttons .button3:hover {
+    background-color: #0056b3;
+}
