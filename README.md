@@ -1,4 +1,4 @@
-# Cignoli Automotive Group Website
+# Web and Multimedia Technology Project Website
 
 ## Project Description
 
